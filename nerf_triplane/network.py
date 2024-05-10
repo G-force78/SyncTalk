@@ -370,6 +370,8 @@ class NeRFNetwork(NeRFRenderer):
         aud_ch_att = self.aud_ch_att_net(enc_x)
         enc_w = enc_a * aud_ch_att
 
+
+        eye_att = torch.tensor([])  # or any other default value
         if e is not None:
             # e = self.encoder_eye(e)
             # eye_att = torch.sigmoid(self.eye_att_net(enc_x))
