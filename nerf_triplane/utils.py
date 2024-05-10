@@ -525,7 +525,7 @@ class LMDMeter:
             import dlib
 
             # load checkpoint manually
-            self.predictor_path = './shape_predictor_68_face_landmarks.dat'
+            self.predictor_path = '/content/SyncTalk/shape_predictor_68_face_landmarks.dat'
             if not os.path.exists(self.predictor_path):
                 raise FileNotFoundError('Please download dlib checkpoint from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2')
 
